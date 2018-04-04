@@ -50,6 +50,7 @@ void *game()
 int main()
 {
     printf("Total 3 players are needed to start a game \n");
+    printf("\n\n---------------------------------------\n\n");
     sleep(3);
     pthread_t p[6];
     sem_init(&common,0,3);

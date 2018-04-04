@@ -53,4 +53,11 @@ int main()
     sleep(3);
     pthread_t p[6];
     sem_init(&common,0,3);
+    for(int  i=0;i<6;i++)
+{
+    pthread_create(&p[i],NULL,game,NULL);
+    pthread_join(p[i],NULL);
+}
+
+}
 
